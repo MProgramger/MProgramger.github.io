@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hmprogramer.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="能否在str中找到一个长度为m的连续子串，使得这个子串刚好由aim的m个字符组成，顺序无所谓，返回任意满足条件的一个子串的起始位置，未找到返回-1 注意：即种类必须一样，每种字符出现的个数也必须一样 这里的子串是连续的，子序列是不连续的 字符串排列问题具体见leetcode-567题1234567891011给你两个字符串 s1 和 s2 ，写一个函数来判断 s2 是否包含 s1 的排列。如果是，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字符串排列问题--求在字符串中的子串">
+<meta property="og:url" content="https://hmprogramer.github.io/2023/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%88%97%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:site_name" content="hm_programer">
+<meta property="og:description" content="能否在str中找到一个长度为m的连续子串，使得这个子串刚好由aim的m个字符组成，顺序无所谓，返回任意满足条件的一个子串的起始位置，未找到返回-1 注意：即种类必须一样，每种字符出现的个数也必须一样 这里的子串是连续的，子序列是不连续的 字符串排列问题具体见leetcode-567题1234567891011给你两个字符串 s1 和 s2 ，写一个函数来判断 s2 是否包含 s1 的排列。如果是，">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-10-02T11:29:19.000Z">
+<meta property="article:modified_time" content="2023-10-02T14:55:18.166Z">
+<meta property="article:author" content="hm">
+<meta property="article:tag" content="算法">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://hmprogramer.github.io/2023/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%88%97%E9%97%AE%E9%A2%98/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://hmprogramer.github.io/2023/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%88%97%E9%97%AE%E9%A2%98/","path":"2023/10/02/字符串排列问题/","title":"字符串排列问题--求在字符串中的子串"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>字符串排列问题--求在字符串中的子串 | hm_programer</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">hm_programer</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">学无止境</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">2</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">28</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%88%97%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">字符串排列问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E8%A7%81leetcode-567%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">具体见leetcode-567题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E8%A7%A3%E6%9E%90"><span class="nav-number">1.2.</span> <span class="nav-text">题目解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.3.</span> <span class="nav-text">代码实现</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">hm</p>
+  <div class="site-description" itemprop="description">不积跬步，无以至千里</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://hmprogramer.github.io/2023/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%88%97%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hm_programer">
+      <meta itemprop="description" content="不积跬步，无以至千里">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="字符串排列问题--求在字符串中的子串 | hm_programer">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          字符串排列问题--求在字符串中的子串
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-10-02 19:29:19 / 修改时间：22:55:18" itemprop="dateCreated datePublished" datetime="2023-10-02T19:29:19+08:00">2023-10-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">滑动窗口算法</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>能否在str中找到一个长度为m的连续子串，使得这个子串刚好由aim的m个字符组成，顺序无所谓，返回任意满足条件的一个子串的起始位置，未找到返回-1</p>
+<p>注意：即种类必须一样，每种字符出现的个数也必须一样</p>
+<p>这里的子串是连续的，子序列是不连续的</p>
+<h2 id="字符串排列问题"><a href="#字符串排列问题" class="headerlink" title="字符串排列问题"></a>字符串排列问题</h2><h3 id="具体见leetcode-567题"><a href="#具体见leetcode-567题" class="headerlink" title="具体见leetcode-567题"></a>具体见leetcode-567题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">给你两个字符串 s1 和 s2 ，写一个函数来判断 s2 是否包含 s1 的排列。如果是，返回 <span class="literal">true</span> ；否则，返回 <span class="literal">false</span> 。</span><br><span class="line">换句话说，s1 的排列之一是 s2 的 子串 。</span><br><span class="line">示例 1：</span><br><span class="line"></span><br><span class="line">输入：s1 = <span class="string">&quot;ab&quot;</span> s2 = <span class="string">&quot;eidbaooo&quot;</span></span><br><span class="line">输出：<span class="literal">true</span></span><br><span class="line">解释：s2 包含 s1 的排列之一 (<span class="string">&quot;ba&quot;</span>).</span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：s1= <span class="string">&quot;ab&quot;</span> s2 = <span class="string">&quot;eidboaoo&quot;</span></span><br><span class="line">输出：<span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="题目解析"><a href="#题目解析" class="headerlink" title="题目解析"></a>题目解析</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">具体解题思路：就是hashmap+滑动窗口</span><br><span class="line"></span><br><span class="line">当str1计数到5个数时（str2长度时），再去看all是否为0</span><br><span class="line">如果不为0 说明肯定有对不上的数</span><br><span class="line">然后移动str1中的窗口，移动的过程中进入的数 需要把str2中的对应的字符个数减一</span><br><span class="line">左边出来的数需要把str2中之前减去的字符个数还回去</span><br><span class="line">同时在这个过程中看all是否为0 </span><br><span class="line"> 注意我们是在当前位置判断前一个窗口达不达标，所以最后一个窗口在<span class="keyword">for</span>循环之外判断 </span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">public static int containExactly3(String s1, String s2) &#123;</span><br><span class="line">		<span class="keyword">if</span> (s1 == null || s2 == null || s1.length() &lt; s2.length()) &#123;</span><br><span class="line">			<span class="built_in">return</span> -1;</span><br><span class="line">		&#125;</span><br><span class="line">		char[] str2 = s2.toCharArray();</span><br><span class="line">		int M = str2.length;</span><br><span class="line">		int[] count = new int[256];</span><br><span class="line">		<span class="keyword">for</span> (int i = 0; i &lt; M; i++) &#123;</span><br><span class="line">			count[str2[i]]++;</span><br><span class="line">		&#125;</span><br><span class="line">		int all = M;</span><br><span class="line">		char[] str1 = s1.toCharArray();</span><br><span class="line">		int R = 0;</span><br><span class="line">		// 0~M-1</span><br><span class="line">		<span class="keyword">for</span> (; R &lt; M; R++) &#123; // 最早的M个字符，让其窗口初步形成</span><br><span class="line">			<span class="keyword">if</span> (count[str1[R]]-- &gt; 0) &#123;</span><br><span class="line">				all--;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		// 窗口初步形成了，并没有判断有效无效，决定下一个位置一上来判断</span><br><span class="line">		// 接下来的过程，窗口右进一个，左吐一个</span><br><span class="line">		<span class="keyword">for</span> (; R &lt; str1.length; R++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (all == 0) &#123; // R-1</span><br><span class="line">				<span class="built_in">return</span> R - M;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (count[str1[R]]-- &gt; 0) &#123;</span><br><span class="line">				all--;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (count[str1[R - M]]++ &gt;= 0) &#123;</span><br><span class="line">				all++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">return</span> all == 0 ? R - M : -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>本题测试链接：<a target="_blank" rel="noopener" href="https://leetcode.com/problems/permutation-in-string/">https://leetcode.com/problems/permutation-in-string/</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i># 算法</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/09/28/ceshi/" rel="prev" title="ceshi">
+                  <i class="fa fa-angle-left"></i> ceshi
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">hm</span>
+  </div>
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

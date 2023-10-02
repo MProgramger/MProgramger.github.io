@@ -87,43 +87,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2023/09/27/hello-world11/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
     <url>/2023/09/27/hello-world12/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/09/27/hello-world13/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -177,6 +141,24 @@
   </entry>
   <entry>
     <title>Hello World</title>
+    <url>/2023/09/27/hello-world13/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
     <url>/2023/09/27/hello-world16/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -195,7 +177,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2023/09/27/hello-world17/</url>
+    <url>/2023/09/27/hello-world11/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -214,6 +196,24 @@
   <entry>
     <title>Hello World</title>
     <url>/2023/09/27/hello-world18/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/09/27/hello-world17/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -303,24 +303,6 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2023/09/28/hello-world22/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
     <url>/2023/09/27/hello-world3/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -357,7 +339,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2023/09/27/hello-world6/</url>
+    <url>/2023/09/27/hello-world5/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -375,7 +357,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2023/09/27/hello-world5/</url>
+    <url>/2023/09/27/hello-world6/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -499,13 +481,42 @@
       </tags>
   </entry>
   <entry>
+    <title>字符串排列问题--求在字符串中的子串</title>
+    <url>/2023/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%88%97%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>能否在str中找到一个长度为m的连续子串，使得这个子串刚好由aim的m个字符组成，顺序无所谓，返回任意满足条件的一个子串的起始位置，未找到返回-1</p>
+<p>注意：即种类必须一样，每种字符出现的个数也必须一样</p>
+<p>这里的子串是连续的，子序列是不连续的</p>
+<h2 id="字符串排列问题"><a href="#字符串排列问题" class="headerlink" title="字符串排列问题"></a>字符串排列问题</h2><h3 id="具体见leetcode-567题"><a href="#具体见leetcode-567题" class="headerlink" title="具体见leetcode-567题"></a>具体见leetcode-567题</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">给你两个字符串 s1 和 s2 ，写一个函数来判断 s2 是否包含 s1 的排列。如果是，返回 <span class="literal">true</span> ；否则，返回 <span class="literal">false</span> 。</span><br><span class="line">换句话说，s1 的排列之一是 s2 的 子串 。</span><br><span class="line">示例 1：</span><br><span class="line"></span><br><span class="line">输入：s1 = <span class="string">&quot;ab&quot;</span> s2 = <span class="string">&quot;eidbaooo&quot;</span></span><br><span class="line">输出：<span class="literal">true</span></span><br><span class="line">解释：s2 包含 s1 的排列之一 (<span class="string">&quot;ba&quot;</span>).</span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：s1= <span class="string">&quot;ab&quot;</span> s2 = <span class="string">&quot;eidboaoo&quot;</span></span><br><span class="line">输出：<span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="题目解析"><a href="#题目解析" class="headerlink" title="题目解析"></a>题目解析</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">具体解题思路：就是hashmap+滑动窗口</span><br><span class="line"></span><br><span class="line">当str1计数到5个数时（str2长度时），再去看all是否为0</span><br><span class="line">如果不为0 说明肯定有对不上的数</span><br><span class="line">然后移动str1中的窗口，移动的过程中进入的数 需要把str2中的对应的字符个数减一</span><br><span class="line">左边出来的数需要把str2中之前减去的字符个数还回去</span><br><span class="line">同时在这个过程中看all是否为0 </span><br><span class="line"> 注意我们是在当前位置判断前一个窗口达不达标，所以最后一个窗口在<span class="keyword">for</span>循环之外判断 </span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">public static int containExactly3(String s1, String s2) &#123;</span><br><span class="line">		<span class="keyword">if</span> (s1 == null || s2 == null || s1.length() &lt; s2.length()) &#123;</span><br><span class="line">			<span class="built_in">return</span> -1;</span><br><span class="line">		&#125;</span><br><span class="line">		char[] str2 = s2.toCharArray();</span><br><span class="line">		int M = str2.length;</span><br><span class="line">		int[] count = new int[256];</span><br><span class="line">		<span class="keyword">for</span> (int i = 0; i &lt; M; i++) &#123;</span><br><span class="line">			count[str2[i]]++;</span><br><span class="line">		&#125;</span><br><span class="line">		int all = M;</span><br><span class="line">		char[] str1 = s1.toCharArray();</span><br><span class="line">		int R = 0;</span><br><span class="line">		// 0~M-1</span><br><span class="line">		<span class="keyword">for</span> (; R &lt; M; R++) &#123; // 最早的M个字符，让其窗口初步形成</span><br><span class="line">			<span class="keyword">if</span> (count[str1[R]]-- &gt; 0) &#123;</span><br><span class="line">				all--;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		// 窗口初步形成了，并没有判断有效无效，决定下一个位置一上来判断</span><br><span class="line">		// 接下来的过程，窗口右进一个，左吐一个</span><br><span class="line">		<span class="keyword">for</span> (; R &lt; str1.length; R++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (all == 0) &#123; // R-1</span><br><span class="line">				<span class="built_in">return</span> R - M;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (count[str1[R]]-- &gt; 0) &#123;</span><br><span class="line">				all--;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (count[str1[R - M]]++ &gt;= 0) &#123;</span><br><span class="line">				all++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">return</span> all == 0 ? R - M : -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>本题测试链接：<a href="https://leetcode.com/problems/permutation-in-string/">https://leetcode.com/problems/permutation-in-string/</a></p>
+]]></content>
+      <categories>
+        <category>滑动窗口算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/2023/09/27/MWebLibrary/docs/16958133566833/</url>
     <content><![CDATA[<h1 id="欢迎使用-MWeb"><a href="#欢迎使用-MWeb" class="headerlink" title="欢迎使用 MWeb"></a>欢迎使用 MWeb</h1><p>MWeb 是一款功能很全面的 Markdown 编辑，笔记和发布软件。目前已支持 macOS&#x2F;iPadOS&#x2F;iOS 三个平台，并针对每个平台做了深度优化，macOS 版的 MWeb Pro 还有静态网站生成功能。所以，MWeb 算是比较复杂的软件了。因此，开始使用 MWeb 前，建议先阅读使用文档。请使用菜单：“帮助 - 使用文档” 来阅读使用文档。</p>
 <h2 id="帮助我们改进-MWeb"><a href="#帮助我们改进-MWeb" class="headerlink" title="帮助我们改进 MWeb"></a>帮助我们改进 MWeb</h2><p>如果你喜欢 MWeb，想让它变得更好，你可以：</p>
 <ol>
 <li>推荐 MWeb，让更多的人知道。</li>
-<li>给我们发反馈和建议：<a href="mailto:&#x63;&#111;&#x64;&#101;&#x72;&#x66;&#111;&#114;&#97;&#x72;&#x74;&#x2b;&#x32;&#x33;&#51;&#51;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#x63;&#111;&#x64;&#101;&#x72;&#x66;&#111;&#114;&#97;&#x72;&#x74;&#x2b;&#x32;&#x33;&#51;&#51;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a></li>
+<li>给我们发反馈和建议：<a href="mailto:&#x63;&#111;&#x64;&#x65;&#x72;&#102;&#111;&#114;&#x61;&#x72;&#116;&#x2b;&#50;&#x33;&#51;&#x33;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#x63;&#111;&#x64;&#x65;&#x72;&#102;&#111;&#114;&#x61;&#x72;&#116;&#x2b;&#50;&#x33;&#51;&#x33;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a></li>
 <li>在 Mac App Store 上评价 （如果是在 MAS 上购买的话）。</li>
 </ol>
 ]]></content>
