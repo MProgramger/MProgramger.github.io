@@ -69,24 +69,6 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2023/09/27/hello-world11/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
     <url>/2023/09/27/hello-world12/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -106,6 +88,24 @@
   <entry>
     <title>Hello World</title>
     <url>/2023/09/27/hello-world13/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/09/27/hello-world11/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -267,46 +267,11 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2023/09/27/hello-world8/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
     <url>/2023/09/27/hello-world7/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/09/25/test-image/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">![图片](/images/girl.jpeg <span class="string">&quot;甘雨&quot;</span>)</span><br></pre></td></tr></table></figure>
-
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
@@ -337,31 +302,84 @@
 ]]></content>
   </entry>
   <entry>
-    <title>001_两数之和</title>
-    <url>/2023/10/12/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</url>
-    <content><![CDATA[<h2 id="1-两数之和"><a href="#1-两数之和" class="headerlink" title="1. 两数之和"></a>1. 两数之和</h2><p>给定一个整数数组 <code>nums</code> 和一个整数目标值 <code>target</code>，请你在该数组中找出 <strong>和为目标值</strong> <em><code>target</code></em> 的那 <strong>两个</strong> 整数，并返回它们的数组下标。</p>
-<p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。</p>
-<p>你可以按任意顺序返回答案。</p>
-<h3 id="具体示例"><a href="#具体示例" class="headerlink" title="具体示例"></a>具体示例</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">示例 1：</span><br><span class="line"></span><br><span class="line">输入：nums = [2,7,11,15], target = 9</span><br><span class="line">输出：[0,1]</span><br><span class="line">解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。</span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：nums = [3,2,4], target = 6</span><br><span class="line">输出：[1,2]</span><br><span class="line">示例 3：</span><br><span class="line"></span><br><span class="line">输入：nums = [3,3], target = 6</span><br><span class="line">输出：[0,1]</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">提示：</span><br><span class="line"></span><br><span class="line">2 &lt;= nums.length &lt;= 104</span><br><span class="line">-109 &lt;= nums[i] &lt;= 109</span><br><span class="line">-109 &lt;= target &lt;= 109</span><br><span class="line">只会存在一个有效答案</span><br></pre></td></tr></table></figure>
+    <title>Hello World</title>
+    <url>/2023/09/27/hello-world8/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<h3 id="思路解析"><a href="#思路解析" class="headerlink" title="思路解析"></a>思路解析</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">这一题的关键就是通过map来记录每个数和对应的下标位置</span><br><span class="line">同时注意避免同一个数的2倍是目标数-需要把map的put操作和containskey操作放到一个<span class="keyword">for</span>循环中去</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-
-
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] twoSum(<span class="type">int</span>[] nums, <span class="type">int</span> target) &#123;</span><br><span class="line">            Map&lt;Integer,Integer&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>();</span><br><span class="line">    </span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(map.containsKey(target-nums[i]))&#123;</span><br><span class="line">                     <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;map.get(target-nums[i]), i&#125;;</span><br><span class="line">                &#125;</span><br><span class="line">                 map.put(nums[i],i);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">这题相对比较简单，就是用<span class="built_in">hash</span>表来解决，key为具体数，value为下标，通过containsKey方法来判断是否存在两数之和</span><br></pre></td></tr></table></figure>
-
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>hash算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>hot100</tag>
-      </tags>
+  </entry>
+  <entry>
+    <title>newPage10</title>
+    <url>/2023/10/16/newPage10/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>newPage1</title>
+    <url>/2023/10/16/newPage1/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>newPage2</title>
+    <url>/2023/10/16/newPage2/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>newPage3</title>
+    <url>/2023/10/16/newPage3/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>newPage5</title>
+    <url>/2023/10/16/newPage5/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>newPage6</title>
+    <url>/2023/10/16/newPage6/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>newPage7</title>
+    <url>/2023/10/16/newPage7/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>newPage8</title>
+    <url>/2023/10/16/newPage8/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>newPage9</title>
+    <url>/2023/10/16/newPage9/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/09/25/test-image/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br><span class="line">![图片](/images/girl.jpeg <span class="string">&quot;甘雨&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>二分算法</title>
@@ -400,30 +418,26 @@
       </tags>
   </entry>
   <entry>
-    <title>005_盛最多水的容器问题</title>
-    <url>/2023/10/12/%E5%8F%8C%E6%8C%87%E9%92%88%E6%B1%82%E8%A7%A3%E7%9B%9B%E6%9C%80%E5%A4%A7%E6%B0%B4%E9%87%8F%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="11-盛最多水的容器"><a href="#11-盛最多水的容器" class="headerlink" title="11. 盛最多水的容器"></a>11. 盛最多水的容器</h2><p>给定一个长度为 <code>n</code> 的整数数组 <code>height</code> 。有 <code>n</code> 条垂线，第 <code>i</code> 条线的两个端点是 <code>(i, 0)</code> 和 <code>(i, height[i])</code> 。</p>
-<p>找出其中的两条线，使得它们与 <code>x</code> 轴共同构成的容器可以容纳最多的水。</p>
-<p>返回容器可以储存的最大水量。</p>
-<p><strong>说明：</strong>你不能倾斜容器。</p>
-<h3 id="具体示例"><a href="#具体示例" class="headerlink" title="具体示例"></a>具体示例</h3><p><img src="/../images/question_11.jpg" alt="question_11"></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">输入：[1,8,6,2,5,4,8,3,7]</span><br><span class="line">输出：49 </span><br><span class="line">解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。</span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：height = [1,1]</span><br><span class="line">输出：1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <title>001_两数之和</title>
+    <url>/2023/10/12/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</url>
+    <content><![CDATA[<h2 id="1-两数之和"><a href="#1-两数之和" class="headerlink" title="1. 两数之和"></a>1. 两数之和</h2><p>给定一个整数数组 <code>nums</code> 和一个整数目标值 <code>target</code>，请你在该数组中找出 <strong>和为目标值</strong> <em><code>target</code></em> 的那 <strong>两个</strong> 整数，并返回它们的数组下标。</p>
+<p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。</p>
+<p>你可以按任意顺序返回答案。</p>
+<h3 id="具体示例"><a href="#具体示例" class="headerlink" title="具体示例"></a>具体示例</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">示例 1：</span><br><span class="line"></span><br><span class="line">输入：nums = [2,7,11,15], target = 9</span><br><span class="line">输出：[0,1]</span><br><span class="line">解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。</span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：nums = [3,2,4], target = 6</span><br><span class="line">输出：[1,2]</span><br><span class="line">示例 3：</span><br><span class="line"></span><br><span class="line">输入：nums = [3,3], target = 6</span><br><span class="line">输出：[0,1]</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">提示：</span><br><span class="line"></span><br><span class="line">2 &lt;= nums.length &lt;= 104</span><br><span class="line">-109 &lt;= nums[i] &lt;= 109</span><br><span class="line">-109 &lt;= target &lt;= 109</span><br><span class="line">只会存在一个有效答案</span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="思路解析"><a href="#思路解析" class="headerlink" title="思路解析"></a>思路解析</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">其实这道题不要想那么麻烦，你就记得无非就是最低高度乘以两个下标间距</span><br><span class="line">然后我们不防先求0到length-1的面积</span><br><span class="line">之后左移或者右移重新计算下面积再和之前的进行比较，</span><br><span class="line">那么啥时候左移啥时候右移？</span><br><span class="line">很明显哪边短 就移动哪边 这样才能有可能移动到高度更高的下标位置</span><br><span class="line">而如果两边相等 移动哪边都行</span><br><span class="line">https://leetcode.wang/leetCode-11-Container-With-Most-Water.html</span><br></pre></td></tr></table></figure>
+<h3 id="思路解析"><a href="#思路解析" class="headerlink" title="思路解析"></a>思路解析</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">这一题的关键就是通过map来记录每个数和对应的下标位置</span><br><span class="line">同时注意避免同一个数的2倍是目标数-需要把map的put操作和containskey操作放到一个<span class="keyword">for</span>循环中去</span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">maxArea</span><span class="params">(<span class="type">int</span>[] height)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">maxArea</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">right</span> <span class="operator">=</span> height.length-<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(left&lt;right)&#123;</span><br><span class="line">            maxArea = Math.max(maxArea,Math.min(height[left],height[right])*(right-left));</span><br><span class="line">            <span class="keyword">if</span>(height[left]&lt;height[right])&#123;</span><br><span class="line">                left++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxArea;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] twoSum(<span class="type">int</span>[] nums, <span class="type">int</span> target) &#123;</span><br><span class="line">            Map&lt;Integer,Integer&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>();</span><br><span class="line">    </span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(map.containsKey(target-nums[i]))&#123;</span><br><span class="line">                     <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;map.get(target-nums[i]), i&#125;;</span><br><span class="line">                &#125;</span><br><span class="line">                 map.put(nums[i],i);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">快慢指针来求解问题</span><br></pre></td></tr></table></figure>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">这题相对比较简单，就是用<span class="built_in">hash</span>表来解决，key为具体数，value为下标，通过containsKey方法来判断是否存在两数之和</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
-        <category>双指针算法</category>
+        <category>hash算法</category>
       </categories>
       <tags>
         <tag>算法</tag>
@@ -451,6 +465,37 @@
 ]]></content>
       <categories>
         <category>hash算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>hot100</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>005_盛最多水的容器问题</title>
+    <url>/2023/10/12/%E5%8F%8C%E6%8C%87%E9%92%88%E6%B1%82%E8%A7%A3%E7%9B%9B%E6%9C%80%E5%A4%A7%E6%B0%B4%E9%87%8F%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="11-盛最多水的容器"><a href="#11-盛最多水的容器" class="headerlink" title="11. 盛最多水的容器"></a>11. 盛最多水的容器</h2><p>给定一个长度为 <code>n</code> 的整数数组 <code>height</code> 。有 <code>n</code> 条垂线，第 <code>i</code> 条线的两个端点是 <code>(i, 0)</code> 和 <code>(i, height[i])</code> 。</p>
+<p>找出其中的两条线，使得它们与 <code>x</code> 轴共同构成的容器可以容纳最多的水。</p>
+<p>返回容器可以储存的最大水量。</p>
+<p><strong>说明：</strong>你不能倾斜容器。</p>
+<h3 id="具体示例"><a href="#具体示例" class="headerlink" title="具体示例"></a>具体示例</h3><p><img src="/../images/question_11.jpg" alt="question_11"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">输入：[1,8,6,2,5,4,8,3,7]</span><br><span class="line">输出：49 </span><br><span class="line">解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。</span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：height = [1,1]</span><br><span class="line">输出：1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路解析"><a href="#思路解析" class="headerlink" title="思路解析"></a>思路解析</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">其实这道题不要想那么麻烦，你就记得无非就是最低高度乘以两个下标间距</span><br><span class="line">然后我们不防先求0到length-1的面积</span><br><span class="line">之后左移或者右移重新计算下面积再和之前的进行比较，</span><br><span class="line">那么啥时候左移啥时候右移？</span><br><span class="line">很明显哪边短 就移动哪边 这样才能有可能移动到高度更高的下标位置</span><br><span class="line">而如果两边相等 移动哪边都行</span><br><span class="line">https://leetcode.wang/leetCode-11-Container-With-Most-Water.html</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">maxArea</span><span class="params">(<span class="type">int</span>[] height)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">maxArea</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">right</span> <span class="operator">=</span> height.length-<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(left&lt;right)&#123;</span><br><span class="line">            maxArea = Math.max(maxArea,Math.min(height[left],height[right])*(right-left));</span><br><span class="line">            <span class="keyword">if</span>(height[left]&lt;height[right])&#123;</span><br><span class="line">                left++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> maxArea;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">快慢指针来求解问题</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>双指针算法</category>
       </categories>
       <tags>
         <tag>算法</tag>
@@ -543,13 +588,18 @@
       </tags>
   </entry>
   <entry>
+    <title>newPage4</title>
+    <url>/2023/10/16/newPage4/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/2023/09/27/MWebLibrary/docs/16958133566833/</url>
     <content><![CDATA[<h1 id="欢迎使用-MWeb"><a href="#欢迎使用-MWeb" class="headerlink" title="欢迎使用 MWeb"></a>欢迎使用 MWeb</h1><p>MWeb 是一款功能很全面的 Markdown 编辑，笔记和发布软件。目前已支持 macOS&#x2F;iPadOS&#x2F;iOS 三个平台，并针对每个平台做了深度优化，macOS 版的 MWeb Pro 还有静态网站生成功能。所以，MWeb 算是比较复杂的软件了。因此，开始使用 MWeb 前，建议先阅读使用文档。请使用菜单：“帮助 - 使用文档” 来阅读使用文档。</p>
 <h2 id="帮助我们改进-MWeb"><a href="#帮助我们改进-MWeb" class="headerlink" title="帮助我们改进 MWeb"></a>帮助我们改进 MWeb</h2><p>如果你喜欢 MWeb，想让它变得更好，你可以：</p>
 <ol>
 <li>推荐 MWeb，让更多的人知道。</li>
-<li>给我们发反馈和建议：<a href="mailto:&#99;&#x6f;&#100;&#x65;&#x72;&#x66;&#x6f;&#x72;&#97;&#x72;&#x74;&#x2b;&#x32;&#51;&#x33;&#51;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#46;&#99;&#x6f;&#109;">&#99;&#x6f;&#100;&#x65;&#x72;&#x66;&#x6f;&#x72;&#97;&#x72;&#x74;&#x2b;&#x32;&#51;&#x33;&#51;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#46;&#99;&#x6f;&#109;</a></li>
+<li>给我们发反馈和建议：<a href="mailto:&#x63;&#x6f;&#100;&#101;&#114;&#x66;&#x6f;&#x72;&#x61;&#114;&#x74;&#x2b;&#50;&#51;&#x33;&#x33;&#64;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;">&#x63;&#x6f;&#100;&#101;&#114;&#x66;&#x6f;&#x72;&#x61;&#114;&#x74;&#x2b;&#50;&#51;&#x33;&#x33;&#64;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;</a></li>
 <li>在 Mac App Store 上评价 （如果是在 MAS 上购买的话）。</li>
 </ol>
 ]]></content>
