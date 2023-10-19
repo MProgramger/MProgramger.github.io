@@ -511,6 +511,107 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hmprogramer.github.io/2023/10/12/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hm_programer">
+      <meta itemprop="description" content="不积跬步，无以至千里">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | hm_programer">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/10/12/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C/" class="post-title-link" itemprop="url">006_三数之和问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-10-12 19:29:19" itemprop="dateCreated datePublished" datetime="2023-10-12T19:29:19+08:00">2023-10-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-10-19 19:45:18" itemprop="dateModified" datetime="2023-10-19T19:45:18+08:00">2023-10-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">双指针算法</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="15-三数之和"><a href="#15-三数之和" class="headerlink" title="15. 三数之和"></a>15. 三数之和</h2><p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请</p>
+<p>你返回所有和为 <code>0</code> 且不重复的三元组。</p>
+<p><strong>注意：</strong>答案中不可以包含重复的三元组。</p>
+<h3 id="具体示例"><a href="#具体示例" class="headerlink" title="具体示例"></a>具体示例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">示例 1：</span><br><span class="line"></span><br><span class="line">输入：nums = [-1,0,1,2,-1,-4]</span><br><span class="line">输出：[[-1,-1,2],[-1,0,1]]</span><br><span class="line">解释：</span><br><span class="line">nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。</span><br><span class="line">nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。</span><br><span class="line">nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。</span><br><span class="line">不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。</span><br><span class="line">注意，输出的顺序和三元组的顺序并不重要。</span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：nums = [0,1,1]</span><br><span class="line">输出：[]</span><br><span class="line">解释：唯一可能的三元组和不为 0 。</span><br><span class="line">示例 3：</span><br><span class="line"></span><br><span class="line">输入：nums = [0,0,0]</span><br><span class="line">输出：[[0,0,0]]</span><br><span class="line">解释：唯一可能的三元组和为 0 。</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路解析"><a href="#思路解析" class="headerlink" title="思路解析"></a>思路解析</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">这题的关键就是通过左右指针来做</span><br><span class="line">这里需要注意的是过滤重复元素</span><br><span class="line"><span class="keyword">if</span>( i &gt; 0 &amp;&amp; nums[i] == nums[i-1] )</span><br><span class="line">            <span class="built_in">continue</span>;</span><br><span class="line">						</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; <span class="title function_">threeSum</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; result = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 先对数组进行排序</span></span><br><span class="line">        Arrays.sort(nums);</span><br><span class="line">        <span class="keyword">for</span>( <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++ )&#123;</span><br><span class="line">            <span class="keyword">if</span>( nums[i] &gt; <span class="number">0</span> )</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">if</span>( i &gt; <span class="number">0</span> &amp;&amp; nums[i] == nums[i-<span class="number">1</span>] )</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="comment">// 定义左右指针（索引位置）</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">lp</span> <span class="operator">=</span> i + <span class="number">1</span>;</span><br><span class="line">            <span class="type">int</span> <span class="variable">rp</span> <span class="operator">=</span> n - <span class="number">1</span>;</span><br><span class="line">            <span class="comment">// 只要左右不重叠，就继续移动指针</span></span><br><span class="line">            <span class="keyword">while</span>( lp &lt; rp )&#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> nums[i] + nums[lp] + nums[rp];</span><br><span class="line">                <span class="keyword">if</span>( sum == <span class="number">0</span> )&#123;</span><br><span class="line">                    result.add(Arrays.asList(nums[i], nums[lp], nums[rp]));</span><br><span class="line">                    lp ++;</span><br><span class="line">                    rp --;</span><br><span class="line">                    <span class="keyword">while</span>( lp &lt; rp &amp;&amp; nums[lp] == nums[lp - <span class="number">1</span>] )</span><br><span class="line">                        lp ++;</span><br><span class="line">                    <span class="keyword">while</span>( lp &lt; rp &amp;&amp; nums[rp] == nums[rp + <span class="number">1</span>] )</span><br><span class="line">                        rp --;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>( sum &lt; <span class="number">0</span> )</span><br><span class="line">                    lp ++;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    rp --;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这道题的关键就是通过定义左右指针，对已经排序的数组进行不断移动，在移动过程中看<span class="built_in">sum</span>之和是否为0</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://hmprogramer.github.io/2023/10/12/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -713,6 +814,108 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://hmprogramer.github.io/2023/10/12/%E6%8E%A5%E9%9B%A8%E6%B0%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hm_programer">
+      <meta itemprop="description" content="不积跬步，无以至千里">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | hm_programer">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/10/12/%E6%8E%A5%E9%9B%A8%E6%B0%B4/" class="post-title-link" itemprop="url">007_接雨水问题</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-10-12 19:29:19" itemprop="dateCreated datePublished" datetime="2023-10-12T19:29:19+08:00">2023-10-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-10-19 20:46:55" itemprop="dateModified" datetime="2023-10-19T20:46:55+08:00">2023-10-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%8F%8C%E6%8C%87%E9%92%88%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">双指针算法</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="42-接雨水问题"><a href="#42-接雨水问题" class="headerlink" title="42. 接雨水问题"></a>42. 接雨水问题</h2><p>给定 <code>n</code> 个非负整数表示每个宽度为 <code>1</code> 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。</p>
+<h3 id="具体示例"><a href="#具体示例" class="headerlink" title="具体示例"></a>具体示例</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/trapping-rain-water/?envType=study-plan-v2&envId=top-100-liked">https://leetcode.cn/problems/trapping-rain-water/?envType=study-plan-v2&amp;envId=top-100-liked</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">输入：height = [0,1,0,2,1,0,1,3,2,1,2,1]</span><br><span class="line">输出：6</span><br><span class="line">解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 </span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：height = [4,2,0,3,2,5]</span><br><span class="line">输出：9</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路解析"><a href="#思路解析" class="headerlink" title="思路解析"></a>思路解析</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">不用辅助数组，谁小 就选那边做边界--木桶原理</span><br><span class="line">然后拿最小边界减去当前下标所对应的高度</span><br><span class="line">如果两边相等 选那边都行</span><br><span class="line"></span><br><span class="line">大厂刷题班-22</span><br><span class="line">https://www.bilibili.com/video/BV1vi4y1R7g9?p=31&amp;vd_source=e27349b4bfb06b0d488dd00cc7a4dbc8</span><br><span class="line"></span><br><span class="line">或者可以参考</span><br><span class="line">https://leetcode.wang/leetCode-42-Trapping-Rain-Water.html</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">trap</span><span class="params">(<span class="type">int</span>[] arr)</span> &#123;</span><br><span class="line">		<span class="keyword">if</span>(height == <span class="literal">null</span> || height.length &lt;= <span class="number">2</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> height.length;</span><br><span class="line">    <span class="type">int</span> <span class="variable">leftMax</span> <span class="operator">=</span> height[<span class="number">0</span>]; <span class="comment">//先将0位置设为左边最大值</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">rightMax</span> <span class="operator">=</span> height[n-<span class="number">1</span>]; <span class="comment">//先将n-1位置设为右边最大值</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span>  <span class="variable">r</span> <span class="operator">=</span> n-<span class="number">2</span>;</span><br><span class="line">    <span class="type">int</span> <span class="variable">water</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(l&lt;=r)&#123;<span class="comment">//注意边界</span></span><br><span class="line">      <span class="keyword">if</span>(leftMax&lt;=rightMax)&#123;</span><br><span class="line">        water += Math.max(<span class="number">0</span>,leftMax-height[l]);</span><br><span class="line">        leftMax = Math.max(leftMax,height[l]);</span><br><span class="line">        l++;</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        water += Math.max(<span class="number">0</span>,rightMax-height[r]);</span><br><span class="line">        rightMax = Math.max(rightMax,height[r]);</span><br><span class="line">        r--;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">     <span class="keyword">return</span> water;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这题关键点就是从列的角度出发，求每一列都存留多少水，</span><br><span class="line">然后从首尾分别向</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://hmprogramer.github.io/2023/10/12/%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -887,201 +1090,6 @@
 
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">这题比较巧妙的思路就是用快慢指针，分别从0位置开始，慢指针不是0才往前移动一位，快指针每个数组元素都往前移动一位</span><br><span class="line">这样遍历一遍后 其实就知道了不是零的元素有多少个，</span><br><span class="line">然后将数组剩余位置的值用0补齐</span><br></pre></td></tr></table></figure>
 
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://hmprogramer.github.io/2023/10/02/%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%88%86%E7%BB%84/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="hm">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hm_programer">
-      <meta itemprop="description" content="不积跬步，无以至千里">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | hm_programer">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/10/02/%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%88%86%E7%BB%84/" class="post-title-link" itemprop="url">002_字母异位词分组问题</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-10-02 19:29:19" itemprop="dateCreated datePublished" datetime="2023-10-02T19:29:19+08:00">2023-10-02</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-10-15 21:23:12" itemprop="dateModified" datetime="2023-10-15T21:23:12+08:00">2023-10-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/hash%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">hash算法</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="49-字母异位词分组问题"><a href="#49-字母异位词分组问题" class="headerlink" title="49. 字母异位词分组问题"></a>49. 字母异位词分组问题</h2><p>给你一个字符串数组，请你将 <strong>字母异位词</strong> 组合在一起。可以按任意顺序返回结果列表。</p>
-<p>字母异位词** 是由重新排列源单词的所有字母得到的一个新单词。</p>
-<h3 id="具体示例"><a href="#具体示例" class="headerlink" title="具体示例"></a>具体示例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">示例 1:</span><br><span class="line"></span><br><span class="line">输入: strs = [<span class="string">&quot;eat&quot;</span>, <span class="string">&quot;tea&quot;</span>, <span class="string">&quot;tan&quot;</span>, <span class="string">&quot;ate&quot;</span>, <span class="string">&quot;nat&quot;</span>, <span class="string">&quot;bat&quot;</span>]</span><br><span class="line">输出: [[<span class="string">&quot;bat&quot;</span>],[<span class="string">&quot;nat&quot;</span>,<span class="string">&quot;tan&quot;</span>],[<span class="string">&quot;ate&quot;</span>,<span class="string">&quot;eat&quot;</span>,<span class="string">&quot;tea&quot;</span>]]</span><br><span class="line">示例 2:</span><br><span class="line"></span><br><span class="line">输入: strs = [<span class="string">&quot;&quot;</span>]</span><br><span class="line">输出: [[<span class="string">&quot;&quot;</span>]]</span><br><span class="line">示例 3:</span><br><span class="line"></span><br><span class="line">输入: strs = [<span class="string">&quot;a&quot;</span>]</span><br><span class="line">输出: [[<span class="string">&quot;a&quot;</span>]]</span><br><span class="line"></span><br><span class="line">提示：</span><br><span class="line"></span><br><span class="line">1 &lt;= strs.length &lt;= 104</span><br><span class="line">0 &lt;= strs[i].length &lt;= 100</span><br><span class="line">strs[i] 仅包含小写字母</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="思路解析"><a href="#思路解析" class="headerlink" title="思路解析"></a>思路解析</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">这题的关键是找到字母异位词的共同点，即他们的字符出现个数一样多，这样一来可以把每个字符映射到具体的数组上，然后去统计数组上字符的个数，并取出字符串映射为具体的key</span><br><span class="line"></span><br><span class="line">这一题关键是  记录字符串的每个字符出现的次数从而完成映射</span><br><span class="line">比如 5 个字母，来看一下怎么完成映射。</span><br><span class="line"></span><br><span class="line">首先初始化 key = <span class="string">&quot;0#0#0#0#0#&quot;</span>，数字分别代表 abcde 出现的次数，<span class="comment"># 用来分割。</span></span><br><span class="line"></span><br><span class="line">这样的话，<span class="string">&quot;abb&quot;</span> 就映射到了 <span class="string">&quot;1#2#0#0#0&quot;</span>。</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;cdc&quot;</span> 就映射到了 <span class="string">&quot;0#0#2#1#0&quot;</span>。</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;dcc&quot;</span> 就映射到了 <span class="string">&quot;0#0#2#1#0&quot;</span>。</span><br><span class="line"></span><br><span class="line">https://leetcode.wang/leetCode-49-Group-Anagrams.html</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;String&gt;&gt; <span class="title function_">groupAnagrams</span><span class="params">(String[] strs)</span> &#123;</span><br><span class="line">            Map&lt;String,List&lt;String&gt;&gt; groupsMap= <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String,List&lt;String&gt;&gt;();</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;i&lt;strs.length;i++)&#123;</span><br><span class="line">                <span class="type">String</span> <span class="variable">curStr</span> <span class="operator">=</span> strs[i];</span><br><span class="line">                <span class="type">int</span>[]nums= <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">26</span>];</span><br><span class="line"></span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> j= <span class="number">0</span>;j&lt;curStr.length();j++)&#123;</span><br><span class="line">                    nums[curStr.charAt(j)-<span class="string">&#x27;a&#x27;</span>]++;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="type">String</span> <span class="variable">key</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">k</span> <span class="operator">=</span> <span class="number">0</span>;k&lt;nums.length;k++)&#123;</span><br><span class="line">                    key= key+nums[k]+<span class="string">&quot;#&quot;</span>;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span>(groupsMap.containsKey(key))&#123;</span><br><span class="line">                    groupsMap.get(key).add(strs[i]);</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    List&lt;String&gt; tempList = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;String&gt;();</span><br><span class="line">                    tempList.add(strs[i]);</span><br><span class="line">                    groupsMap.put(key,tempList);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;List&lt;String&gt;&gt;(groupsMap.values());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这题的关键是找到字母异位词的共同点，即他们的字符出现个数一样多，这样一来可以把每个字符映射到具体的数组上</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://hmprogramer.github.io/2023/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%88%97%E9%97%AE%E9%A2%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="hm">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="hm_programer">
-      <meta itemprop="description" content="不积跬步，无以至千里">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | hm_programer">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%88%97%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">字符串排列问题--求在字符串中的子串</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-10-02 19:29:19 / 修改时间：22:55:18" itemprop="dateCreated datePublished" datetime="2023-10-02T19:29:19+08:00">2023-10-02</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">滑动窗口算法</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>能否在str中找到一个长度为m的连续子串，使得这个子串刚好由aim的m个字符组成，顺序无所谓，返回任意满足条件的一个子串的起始位置，未找到返回-1</p>
-<p>注意：即种类必须一样，每种字符出现的个数也必须一样</p>
-<p>这里的子串是连续的，子序列是不连续的</p>
-<h2 id="字符串排列问题"><a href="#字符串排列问题" class="headerlink" title="字符串排列问题"></a>字符串排列问题</h2><h3 id="具体见leetcode-567题"><a href="#具体见leetcode-567题" class="headerlink" title="具体见leetcode-567题"></a>具体见leetcode-567题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">给你两个字符串 s1 和 s2 ，写一个函数来判断 s2 是否包含 s1 的排列。如果是，返回 <span class="literal">true</span> ；否则，返回 <span class="literal">false</span> 。</span><br><span class="line">换句话说，s1 的排列之一是 s2 的 子串 。</span><br><span class="line">示例 1：</span><br><span class="line"></span><br><span class="line">输入：s1 = <span class="string">&quot;ab&quot;</span> s2 = <span class="string">&quot;eidbaooo&quot;</span></span><br><span class="line">输出：<span class="literal">true</span></span><br><span class="line">解释：s2 包含 s1 的排列之一 (<span class="string">&quot;ba&quot;</span>).</span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：s1= <span class="string">&quot;ab&quot;</span> s2 = <span class="string">&quot;eidboaoo&quot;</span></span><br><span class="line">输出：<span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="题目解析"><a href="#题目解析" class="headerlink" title="题目解析"></a>题目解析</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">具体解题思路：就是hashmap+滑动窗口</span><br><span class="line"></span><br><span class="line">当str1计数到5个数时（str2长度时），再去看all是否为0</span><br><span class="line">如果不为0 说明肯定有对不上的数</span><br><span class="line">然后移动str1中的窗口，移动的过程中进入的数 需要把str2中的对应的字符个数减一</span><br><span class="line">左边出来的数需要把str2中之前减去的字符个数还回去</span><br><span class="line">同时在这个过程中看all是否为0 </span><br><span class="line"> 注意我们是在当前位置判断前一个窗口达不达标，所以最后一个窗口在<span class="keyword">for</span>循环之外判断 </span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">public static int containExactly3(String s1, String s2) &#123;</span><br><span class="line">		<span class="keyword">if</span> (s1 == null || s2 == null || s1.length() &lt; s2.length()) &#123;</span><br><span class="line">			<span class="built_in">return</span> -1;</span><br><span class="line">		&#125;</span><br><span class="line">		char[] str2 = s2.toCharArray();</span><br><span class="line">		int M = str2.length;</span><br><span class="line">		int[] count = new int[256];</span><br><span class="line">		<span class="keyword">for</span> (int i = 0; i &lt; M; i++) &#123;</span><br><span class="line">			count[str2[i]]++;</span><br><span class="line">		&#125;</span><br><span class="line">		int all = M;</span><br><span class="line">		char[] str1 = s1.toCharArray();</span><br><span class="line">		int R = 0;</span><br><span class="line">		// 0~M-1</span><br><span class="line">		<span class="keyword">for</span> (; R &lt; M; R++) &#123; // 最早的M个字符，让其窗口初步形成</span><br><span class="line">			<span class="keyword">if</span> (count[str1[R]]-- &gt; 0) &#123;</span><br><span class="line">				all--;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		// 窗口初步形成了，并没有判断有效无效，决定下一个位置一上来判断</span><br><span class="line">		// 接下来的过程，窗口右进一个，左吐一个</span><br><span class="line">		<span class="keyword">for</span> (; R &lt; str1.length; R++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (all == 0) &#123; // R-1</span><br><span class="line">				<span class="built_in">return</span> R - M;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (count[str1[R]]-- &gt; 0) &#123;</span><br><span class="line">				all--;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (count[str1[R - M]]++ &gt;= 0) &#123;</span><br><span class="line">				all++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">return</span> all == 0 ? R - M : -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>本题测试链接：<a target="_blank" rel="noopener" href="https://leetcode.com/problems/permutation-in-string/">https://leetcode.com/problems/permutation-in-string/</a></p>
 
       
     </div>
