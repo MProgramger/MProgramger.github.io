@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"hmprogramer.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="76. 最小覆盖子串给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 &quot;&quot; 。 具体示例123456789101112131415161718192021222324252627282930注意：对于 t 中重复字符，我们寻找的子字符串中该字符数量必须不少于 t 中该字符数量。如果 s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="012_最小覆盖子串">
+<meta property="og:url" content="https://hmprogramer.github.io/2023/10/12/12_%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2/index.html">
+<meta property="og:site_name" content="hm_programer">
+<meta property="og:description" content="76. 最小覆盖子串给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 &quot;&quot; 。 具体示例123456789101112131415161718192021222324252627282930注意：对于 t 中重复字符，我们寻找的子字符串中该字符数量必须不少于 t 中该字符数量。如果 s">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-10-12T11:29:19.000Z">
+<meta property="article:modified_time" content="2023-10-31T12:33:39.787Z">
+<meta property="article:author" content="hm">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="hot100">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://hmprogramer.github.io/2023/10/12/12_%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://hmprogramer.github.io/2023/10/12/12_%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2/","path":"2023/10/12/12_最小覆盖子串/","title":"012_最小覆盖子串"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>012_最小覆盖子串 | hm_programer</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">hm_programer</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">学无止境</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">6</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">48</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#76-%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2"><span class="nav-number">1.</span> <span class="nav-text">76. 最小覆盖子串</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E7%A4%BA%E4%BE%8B"><span class="nav-number">1.1.</span> <span class="nav-text">具体示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.2.</span> <span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">hm</p>
+  <div class="site-description" itemprop="description">不积跬步，无以至千里</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">48</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://hmprogramer.github.io/2023/10/12/12_%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hm">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hm_programer">
+      <meta itemprop="description" content="不积跬步，无以至千里">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="012_最小覆盖子串 | hm_programer">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          012_最小覆盖子串
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-10-12 19:29:19" itemprop="dateCreated datePublished" datetime="2023-10-12T19:29:19+08:00">2023-10-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-10-31 20:33:39" itemprop="dateModified" datetime="2023-10-31T20:33:39+08:00">2023-10-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hash%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">hash算法</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="76-最小覆盖子串"><a href="#76-最小覆盖子串" class="headerlink" title="76. 最小覆盖子串"></a>76. 最小覆盖子串</h2><p>给你一个字符串 <code>s</code> 、一个字符串 <code>t</code> 。返回 <code>s</code> 中涵盖 <code>t</code> 所有字符的最小子串。如果 <code>s</code> 中不存在涵盖 <code>t</code> 所有字符的子串，则返回空字符串 <code>&quot;&quot;</code> 。</p>
+<h3 id="具体示例"><a href="#具体示例" class="headerlink" title="具体示例"></a>具体示例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">注意：</span><br><span class="line"></span><br><span class="line">对于 t 中重复字符，我们寻找的子字符串中该字符数量必须不少于 t 中该字符数量。</span><br><span class="line">如果 s 中存在这样的子串，我们保证它是唯一的答案。</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">示例 1：</span><br><span class="line"></span><br><span class="line">输入：s = <span class="string">&quot;ADOBECODEBANC&quot;</span>, t = <span class="string">&quot;ABC&quot;</span></span><br><span class="line">输出：<span class="string">&quot;BANC&quot;</span></span><br><span class="line">解释：最小覆盖子串 <span class="string">&quot;BANC&quot;</span> 包含来自字符串 t 的 <span class="string">&#x27;A&#x27;</span>、<span class="string">&#x27;B&#x27;</span> 和 <span class="string">&#x27;C&#x27;</span>。</span><br><span class="line">示例 2：</span><br><span class="line"></span><br><span class="line">输入：s = <span class="string">&quot;a&quot;</span>, t = <span class="string">&quot;a&quot;</span></span><br><span class="line">输出：<span class="string">&quot;a&quot;</span></span><br><span class="line">解释：整个字符串 s 是最小覆盖子串。</span><br><span class="line">示例 3:</span><br><span class="line"></span><br><span class="line">输入: s = <span class="string">&quot;a&quot;</span>, t = <span class="string">&quot;aa&quot;</span></span><br><span class="line">输出: <span class="string">&quot;&quot;</span></span><br><span class="line">解释: t 中两个字符 <span class="string">&#x27;a&#x27;</span> 均应包含在 s 的子串中，</span><br><span class="line">因此没有符合条件的子字符串，返回空字符串。</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">提示：</span><br><span class="line"></span><br><span class="line">m == s.length</span><br><span class="line">n == t.length</span><br><span class="line">1 &lt;= m, n &lt;= 105</span><br><span class="line">s 和 t 由英文字母组成</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">minWindow</span><span class="params">(String s, String t)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(s.length()&lt;t.length())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">       <span class="type">char</span>[] sArr =  s.toCharArray();</span><br><span class="line">       <span class="type">char</span>[] tArr = t.toCharArray();</span><br><span class="line"></span><br><span class="line">       <span class="type">int</span>[] map = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">256</span>];</span><br><span class="line">       <span class="keyword">for</span>(<span class="type">int</span> i= <span class="number">0</span>;i&lt;tArr.length;i++)&#123;</span><br><span class="line">           map[tArr[i]]++;</span><br><span class="line">       &#125; </span><br><span class="line">       <span class="type">int</span> <span class="variable">all</span> <span class="operator">=</span> tArr.length;</span><br><span class="line"></span><br><span class="line">       <span class="type">int</span> <span class="variable">l</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">       <span class="type">int</span> <span class="variable">r</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">       <span class="type">int</span> <span class="variable">ansl</span> <span class="operator">=</span> -<span class="number">1</span>;</span><br><span class="line">       <span class="type">int</span> <span class="variable">ansr</span> <span class="operator">=</span> -<span class="number">1</span>;</span><br><span class="line">       <span class="type">int</span> <span class="variable">minNum</span> <span class="operator">=</span>  Integer.MAX_VALUE;</span><br><span class="line">       <span class="keyword">while</span>(r!=sArr.length)&#123;</span><br><span class="line">           map[sArr[r]]--;</span><br><span class="line">           <span class="keyword">if</span>(map[sArr[r]]&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">            all--;</span><br><span class="line">           &#125;</span><br><span class="line"></span><br><span class="line">           <span class="keyword">if</span>(all ==<span class="number">0</span>)&#123;</span><br><span class="line">               <span class="keyword">while</span>(map[sArr[l]]&lt;<span class="number">0</span>)&#123;</span><br><span class="line">                   map[sArr[l++]]++;</span><br><span class="line">               &#125;</span><br><span class="line">               <span class="keyword">if</span>(minNum&gt;r-l+<span class="number">1</span>)&#123;</span><br><span class="line">                   minNum = r-l+<span class="number">1</span>;</span><br><span class="line">                   ansl = l;</span><br><span class="line">                   ansr = r;</span><br><span class="line">               &#125;</span><br><span class="line"></span><br><span class="line">                all++;</span><br><span class="line">                map[sArr[l++]]++;</span><br><span class="line">           &#125;</span><br><span class="line">           r++;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> minNum == Integer.MAX_VALUE ? <span class="string">&quot;&quot;</span> :s.substring(ansl,ansr+<span class="number">1</span>);  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">这一题注意使用滑动窗口+差值<span class="built_in">hash</span>表秋求解</span><br><span class="line">同时注意 当r边界移动时对应的<span class="built_in">hash</span>表值需要减去</span><br><span class="line">尤其注意包含等于0 </span><br><span class="line"><span class="keyword">if</span>(map[sArr[r]]&gt;=0)&#123;</span><br><span class="line">            all--;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i># 算法</a>
+              <a href="/tags/hot100/" rel="tag"><i class="fa fa-tag"></i># hot100</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/10/12/11_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/" rel="prev" title="011_滑动窗口最大值">
+                  <i class="fa fa-angle-left"></i> 011_滑动窗口最大值
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/10/12/9_%E6%89%BE%E5%88%B0%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D/" rel="next" title="010_找到字符串中的所有字母异位词">
+                  010_找到字符串中的所有字母异位词 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">hm</span>
+  </div>
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
